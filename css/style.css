@@ -1,0 +1,395 @@
+:root {
+  --charcoal-black-: #161616;
+}
+
+@font-face {
+  font-family: 'Gotham Ultra';
+  src: url('Gotham-UltraItalic.woff2') format('woff2'),
+    url('Gotham-UltraItalic.woff') format('woff'),
+    url('Gotham-UltraItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* General Styling */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* HEADER AND FOOTER */
+.logo {
+  width: 15%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.footerlogo {
+  width: 45%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.showtime-navbar {
+  padding-right: 60px;
+  font-family: 'Gotham Ultra';
+}
+
+.nav-link {
+  color: white;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  margin-left: 0;
+  transition-duration: 1s;
+  transition-function: ease-in-out;
+}
+
+/* VIDEO */
+#myVideo {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.video {
+  padding-left: 0px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #161616;
+  margin: 0;
+  transition-duration: 1s;
+  transition-function: ease-in-out;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 60px;
+}
+
+/* Changing button color */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+}
+
+/* Tagline */
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
+  }
+}
+
+.tagline {
+  padding-bottom: 20px;
+  font-size: 5em;
+  font-family: 'Gotham Ultra';
+  color: white;
+  background-color: #161616;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.taglines {
+  padding-right: 11px;
+}
+
+.taglines1 {
+  padding-right: 20px;
+}
+
+.dancing-gif {
+  width: 30%;
+  height: auto;
+}
+
+/* Pics */
+
+.pics {
+  width: 100%;
+  height: auto;
+  /* border-radius: 30px; */
+  border: 5px solid black;
+}
+
+.pictures {
+  font-family: 'Gotham Ultra';
+}
+
+.pic1 {
+  position: relative;
+  left: 5px;
+}
+
+.pic2 {
+  position: relative;
+  right: 5px;
+}
+
+.buttons {
+  position: relative;
+  top: -100px;
+}
+
+/* Follow us on IG */
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  transition-duration: 1s;
+  transition-function: ease-in-out;
+  color: pink;
+  transition-duration: 1s;
+  transition-function: ease-in-out;
+}
+
+.ig {
+  background-color: #161616;
+  font-family: 'Gotham Ultra';
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  position: relative;
+  top: -50px;
+  padding: 100px;
+}
+
+.igpics {
+  width: 90%;
+  height: auto;
+}
+
+/* Promotions */
+
+.promotions {
+  font-family: 'Gotham Ultra';
+  padding: 100px;
+  background-color: #161616;
+  font-family: 'Gotham Ultra';
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  color: white;
+  position: relative;
+  top: -50px;
+}
+
+
+/* Carosel pics */
+
+.carosel-pics {
+  padding: 5px;
+  position: relative;
+  top: -60px;
+}
+
+/* callToAction */
+
+.callToAction {
+  background-color: black;
+  color: white;
+  padding: 100px;
+  font-family: 'Gotham Ultra';
+  position: relative;
+  top: -30px;
+}
+
+.gif2 {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+/* FOOTER */
+
+.footer-clean {
+  padding:50px 0;
+  background-color:#161616;
+  color: white;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+@media (max-width: 1028px) {
+  .logo {
+    width: 35%;
+    height: auto;
+    padding-left: 20px;
+  }
+
+  .navigation {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .dancing-gif {
+    width: 50%;
+    height: auto;
+  }
+
+  .pics {
+    width: 99%;
+    height: auto;
+  }
+
+  .pic1 {
+    position: relative;
+    left: 0px;
+  }
+
+  .pic2 {
+    position: relative;
+    right: 0px;
+    top: -35px;
+  }
+
+  .ig {
+    top: -100px;
+  }
+
+  .pictures {
+    width: 99%;
+    position: relative;
+    left: 3px;
+  }
+
+  .igpics {
+    padding-bottom: 20px;
+  }
+
+  .carosel-pics {
+    position: relative;
+    top: -110px;
+  }
+
+  .mobile {
+    top: -15px;
+  }
+
+  .promotions {
+    top: -100px;
+  }
+
+  .service-button {
+    top: -135px;
+  }
+
+  .follow-us {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .callToAction {
+    top: -60px;
+  }
+
+}
